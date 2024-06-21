@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>engine</name>
+    <events>
+        <event-block sid="533450500472257">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="128005425542185" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="472552139094901">
+                    <conditions>
+                        <condition id="-16" inverted="1" name="Is on layer" sid="447837533336206" type="hero">
+                            <param id="0" name="Layer">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="464701409108244" type="System">
+                            <param id="0" name="Object to create">hero</param>
+                            <param id="1" name="Layer">3</param>
+                            <param id="2" name="X">spawn.X</param>
+                            <param id="3" name="Y">spawn.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="976487657133527" title="teh physics">
+            <sub-events>
+                <event-block any="1" sid="412999884180158">
+                    <conditions>
+                        <condition id="2" name="Клавиша нажата" sid="546662344535902" type="Keyboard">
+                            <param id="0" name="Клавиша">39</param>
+                        </condition>
+                        <condition id="3" name="Кнопка нажата" sid="142755342295657" type="Gamepad">
+                            <param id="0" name="Геймпад">0</param>
+                            <param id="1" name="Кнопка">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Платформа" id="7" name="Установить управление" sid="688914995485471" type="hero">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Установить отражение" sid="316481332228258" type="hero">
+                            <param id="0" name="Состояние">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="783027244007202">
+                    <conditions>
+                        <condition id="2" name="Клавиша нажата" sid="994971277924243" type="Keyboard">
+                            <param id="0" name="Клавиша">37</param>
+                        </condition>
+                        <condition id="3" name="Кнопка нажата" sid="849791608685071" type="Gamepad">
+                            <param id="0" name="Геймпад">0</param>
+                            <param id="1" name="Кнопка">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Платформа" id="7" name="Установить управление" sid="609288521748649" type="hero">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Установить отражение" sid="238851964067731" type="hero">
+                            <param id="0" name="Состояние">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="697088127744474">
+                    <conditions>
+                        <condition id="2" name="Клавиша нажата" sid="754629814542441" type="Keyboard">
+                            <param id="0" name="Клавиша">90</param>
+                        </condition>
+                        <condition id="3" name="Кнопка нажата" sid="742918259695639" type="Gamepad">
+                            <param id="0" name="Геймпад">0</param>
+                            <param id="1" name="Кнопка">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Платформа" id="7" name="Установить управление" sid="886977325965742" type="hero">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
